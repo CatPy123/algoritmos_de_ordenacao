@@ -38,7 +38,12 @@ próprias funções de ordenação.
 """
 
 def executar_comparacao_desempenho():
-    tamanho = int(input("Digite o tamanho da lista para o teste: "))
+    tamanho = ""
+    while type(tamanho) != int:
+        try:
+            tamanho = int(input("Digite o tamanho da lista para o teste: "))
+        except ValueError:
+            print("Entrada inválida. Por favor, digite um número inteiro.")
     lista_aleatoria = gerar_lista_aleatoria(tamanho)
     lista_quase_ordenada = gerar_lista_quase_ordenada(lista_aleatoria)
     algoritmos = [
