@@ -1,4 +1,4 @@
-# Importação das funções que serão usadas
+ # Importação das funções que serão usadas
 from bubble_sort import bubble_sort, bubble_sort_otimizado
 from utilitarios import ler_lista_do_usuario, exibir_resultado
 from selection_sort import selection_sort
